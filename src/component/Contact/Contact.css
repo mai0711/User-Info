@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+.contact h1 {
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+input, select, textarea{
+    width: 100%;
+    border: 2px solid black;
+    margin: 5px 0px;
+    padding: 10px;
+    background-color: blanchedalmond;
+    font-size: 15px;
+    border-radius: 10px;
+    resize: vertical;
+}
+.submit {
+    width: 100px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contact-container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.contact-image {
+    height: 300px;
+    width: 70%;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
